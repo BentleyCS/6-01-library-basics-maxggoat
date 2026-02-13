@@ -3,10 +3,18 @@
 #There is no provided test file. You must make and submit one yourself. (check older test files for reference)
 
 
+import analytics
+
 # Modify the below function such that it takes in a list of prices and returns that list with 15% added value
 def process_expenses(rawPrices):
-    pass
+    new_price = analytics.apply_markup(rawPrices, 0.15)
+    rawPrices = new_price
+    return rawPrices
 
+
+
+process_expenses(5)
+print(process_expenses(5))
 
 # Modify the below function such that it asks the user for n scores and then returns the highest score and the average score of the list.
 def analyze_scores(n):
