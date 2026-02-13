@@ -7,14 +7,15 @@ import analytics
 
 # Modify the below function such that it takes in a list of prices and returns that list with 15% added value
 def process_expenses(rawPrices):
-    new_price = analytics.apply_markup(rawPrices, 0.15)
-    rawPrices = new_price
+    newPrices = []
+    for x in rawPrices:
+        y=analytics.apply_markup(x, 0.15)
+        newPrices.append(y)
+    rawPrices = newPrices
     return rawPrices
 
-
-
-process_expenses(5)
-print(process_expenses(5))
+x=[10,20,30,40,50,60,70,80,90]
+print(process_expenses(x))
 
 # Modify the below function such that it asks the user for n scores and then returns the highest score and the average score of the list.
 def analyze_scores(n):
