@@ -9,7 +9,7 @@ def test_process_expenses():
 
 
 def test_analyze_scores():
-    assert analyze_scores([20,30]) == [25,30]
+    assert analyze_scores([20,30]) == (25,30)
 
 
 def test_sanitize_usernames():
