@@ -17,6 +17,8 @@ def process_expenses(rawPrices):
 x=[10,20,30,40,50,60,70,80,90]
 print(process_expenses(x))
 
+# assert process_expenses([10, 100]) == ()
+
 # Modify the below function such that it asks the user for n scores and then returns the highest score and the average score of the list.
 def analyze_scores(n):
     x=analytics.get_average(n)
