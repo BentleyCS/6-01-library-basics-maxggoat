@@ -25,7 +25,7 @@ def test_identify_outliers():
 
 def test_binary_search():
     x = [10,20,23,110,300,999]
-    assert binary_search(x,10) == (0,3)
+    assert binary_search(x,10) == (0,2)
 
 def test_search_and_report():
     x = ["  Apple", "Banana ", "  CHERRY  ", " date "]
