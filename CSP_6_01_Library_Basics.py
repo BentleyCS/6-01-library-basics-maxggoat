@@ -80,7 +80,7 @@ def binarySearch(items:list, target):
 def search_and_report(list1, list2):
     list3=list1.copy()
     list3=analytics.clean_text(list3)
-    (M,D) = binarySearch(list3,list2)
+    M = binarySearch(list3,list2)
     return M
 
 x=["  Apple", "Banana ", "  CHERRY  ", " date "]
