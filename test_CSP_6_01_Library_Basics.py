@@ -30,4 +30,4 @@ def test_binary_search():
 
 def test_search_and_report():
     x = ["  Apple", "Banana ", "  CHERRY  ", " date "]
-    assert search_and_report(x) == 3
+    assert search_and_report(x,"date") == 3
