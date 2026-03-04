@@ -14,7 +14,7 @@ def test_analyze_scores():
 
 def test_sanitize_usernames():
     x = ["   Dogs Are Cool", "  Max will play division 1 football        "]
-    assert sanitize_usernames(x) == ["Dogs Are Cool", "Max will play division 1 football"]
+    assert sanitize_usernames(x) == ["dogs are cool", "max will play division 1 football"]
 
 
 
