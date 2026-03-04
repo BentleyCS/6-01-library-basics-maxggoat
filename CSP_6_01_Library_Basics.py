@@ -25,8 +25,8 @@ def analyze_scores(n):
     y=analytics.get_highest(n)
     return x, y
 
-analyze_scores(x)
-print(analyze_scores(x))
+analyze_scores([20,30])
+print(analyze_scores([20,30]))
 
 # Modify the below function such that it takes in a list of strings and returns that list with all spaces removed
 #and all letters lower case.
